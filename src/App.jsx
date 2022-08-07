@@ -1,7 +1,7 @@
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
-// import Particles from './components/Particles';
+import Particles from './components/Particles';
 import Home from './pages/Home';
 import Comics from './pages/Comics';
 import CharacterDetail from './pages/CharacterDetail';
