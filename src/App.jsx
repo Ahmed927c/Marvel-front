@@ -20,7 +20,7 @@ function App() {
         <div className="App">
 			
             <Router>
-			{/* <Particles /> */}
+			<Particles />
                 <Routes>
                     <Route
                         path="/"
