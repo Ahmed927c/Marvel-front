@@ -1,0 +1,66 @@
+.comics-carousel {
+	color: white;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 40px;
+	margin-top: 100px;
+}
+
+.comics-cards {
+	width: 270px;
+	margin: 0;
+	position: relative;
+	z-index: 0;
+}
+
+.comics-cards img {
+	height: 350px;
+	width: 100%;
+	object-fit: cover;
+	object-position: top;
+	transition-property: cursor;
+	transition-duration: 0s;
+	transition-delay: 0s;
+	border-radius: 5px;
+}
+.comics-cards:hover img {
+	filter: grayscale(1);
+	transform: scale(1.2);
+	z-index: 3;
+	transition: 0.5s;
+}
+.comics-card-name {
+	height: 50px;
+	text-align: center;
+	font-size: 1.1rem;
+	margin: 0 auto;
+	padding: 15px 0;
+	right: 0;
+	left: 0;
+	text-shadow: 1px 1px 2px #000, 0 0 0.2em rgb(15, 116, 231),
+		0 0 0.2em white;
+	color: white;
+	z-index: 1;
+}
+.comics-cards:hover .comics-card-name {
+	opacity: 0;
+}
+
+.comics-cards-description {
+	position: absolute;
+	text-align: center;
+	margin: auto 0;
+	bottom: 0;
+	display: none;
+	padding: 1rem 0;
+	background-color: #000;
+	line-height: 1.5rem;
+	max-height: 270px;
+	overflow: scroll;
+	border-radius: 5px;
+	letter-spacing: 0.1rem;
+}
+.comics-cards:hover .comics-cards-description {
+	display: block;
+}

@@ -1,0 +1,71 @@
+.character-carousel {
+	color: white;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 40px;
+	margin-top: 100px;
+}
+
+.character-cards {
+	width: 350px;
+	height: 270px;
+	margin: 0;
+	position: relative;
+	border-radius: 15px;
+}
+.character-cards-thumb {
+	border-radius: 15px;
+}
+.character-cards img {
+	width: 350px;
+	height: 270px;
+	object-fit: cover;
+	object-position: top;
+	filter: grayscale(90%);
+	border-radius: 10px;
+	transition-property: cursor;
+	transition-duration: 0s;
+	transition-delay: 0s;
+}
+.character-cards:hover img {
+	cursor: pointer;
+	transition: 0.5s;
+	filter: none;
+}
+.character-card-name {
+	text-align: center;
+	font-size: 1.8rem;
+	position: absolute;
+	margin: 0 auto;
+	padding: 15px 0;
+	right: 0;
+	left: 0;
+	text-shadow: 1px 1px 2px #000, 0 0 0.5em red, 0 0 0.2em white;
+	color: rgb(241, 219, 14);
+	background-color: transparent;
+	z-index: 1;
+	opacity: 0;
+}
+.character-cards:hover .character-card-name {
+	opacity: 1;
+	transition: 0.5s;
+}
+
+.character-cards-description {
+	position: absolute;
+	text-align: center;
+	margin: auto 0;
+	bottom: 0;
+	opacity: 0;
+	height: calc(3rem);
+	padding: 1rem 0;
+	background-color: #000;
+	overflow: hidden;
+	transition-property: "opacity";
+	transition-duration: 0.5s;
+	transition-delay: 1s;
+}
+.character-cards:hover .character-cards-description {
+	opacity: 1;
+}

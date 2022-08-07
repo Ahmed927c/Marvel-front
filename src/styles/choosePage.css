@@ -1,0 +1,52 @@
+.btn-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+
+}
+.label-page-btn {
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #000;
+	padding: 10px;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+.page-choose-btn-container {
+
+}
+
+.num-btn-container button {
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #000;
+	padding: 10px;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+.btn-container button:disabled {
+	background-color: rgb(235, 17, 17);
+}
+
+.by-page-btn-container button {
+	font-size: 20px;
+	font-weight: bold;
+	color: rgb(229, 236, 15);
+	background-color: #000;
+	padding: 10px;
+	border-radius: 50px;
+	margin-right: 10px;
+}
+
+.by-page-btn-container,
+.page-choose-btn-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+
+}
